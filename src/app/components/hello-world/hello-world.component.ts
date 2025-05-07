@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   name = "Mahmut";
+  imageUrl = "https://example.com/image.jpg"
 }
