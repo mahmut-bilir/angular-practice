@@ -4,7 +4,7 @@
 <p *ngIf="isLoggedIn">Welcome!</p>
 <p *ngIf="!isLoggedIn">Please, log in.</p>
 <ul>
-    <li *ngFor="let user of users">
-        {{user}}
+    <li *ngFor="let user of users; let i=index">
+        {{i+1}} - {{user}}
     </li>
 </ul>
