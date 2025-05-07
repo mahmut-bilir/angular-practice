@@ -15,4 +15,5 @@ export class HelloWorldComponent {
     alert("Hello!");
   };
   isLoggedIn = false;
+  users = ['Mahmut', 'Ali', 'Murat'];
 }

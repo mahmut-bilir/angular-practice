@@ -3,3 +3,8 @@
 <button (click)="sayHi()">Click me</button>
 <p *ngIf="isLoggedIn">Welcome!</p>
 <p *ngIf="!isLoggedIn">Please, log in.</p>
+<ul>
+    <li *ngFor="let user of users">
+        {{user}}
+    </li>
+</ul>
