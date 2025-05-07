@@ -1,3 +1,5 @@
 <p>Merhaba {{name}}!</p>
 <img [src]="imageUrl" alt="Photo" />
 <button (click)="sayHi()">Click me</button>
+<p *ngIf="isLoggedIn">Welcome!</p>
+<p *ngIf="!isLoggedIn">Please, log in.</p>
