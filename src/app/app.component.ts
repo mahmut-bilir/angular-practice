@@ -12,4 +12,8 @@ import { UserCardComponent } from './components/user-card/user-card.component';
 export class AppComponent {
   title = 'angular-practice';
   userName = "Mahmut";
+  message = "";
+  onUserSelected(eventData: string) {
+    this.message = eventData;
+  }
 }

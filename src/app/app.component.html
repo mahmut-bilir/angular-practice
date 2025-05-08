@@ -261,4 +261,5 @@
 
 <router-outlet />
 <app-hello-world></app-hello-world>
-<app-user-card [name]="userName"></app-user-card>
+<app-user-card [name]="userName" (selected)="onUserSelected($event)"></app-user-card>
+<p>{{message}}</p>
