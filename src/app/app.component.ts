@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { LoggerService } from './services/logger.service'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HelloWorldComponent, UserCardComponent],
+  imports: [RouterOutlet, RouterLink, HelloWorldComponent, UserCardComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
