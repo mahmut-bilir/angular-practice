@@ -16,8 +16,17 @@
 <button (click)="logMessage()">Logging</button>
 
 <hr />
+<p>Template-Driven Forms Ex :</p>
 <form (ngSubmit)="onSubmit()">
   <label>Name :</label>
   <input [(ngModel)]="name" name="name" required />
+  <button type="submit">Submit</button>
+</form>
+
+<hr />
+<p>Reactive Forms Ex :</p>
+<form (ngSubmit)="submitForm()">
+  <label>Name:</label>
+  <input [formControl]="nameControl" />
   <button type="submit">Submit</button>
 </form>
