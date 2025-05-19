@@ -11,6 +11,6 @@ export class UserCardComponent {
   @Output() selected = new EventEmitter<string>();
   notifyParent() {
     this.selected.emit("Mahmut selected!");
-  };
+  }
 
 }
