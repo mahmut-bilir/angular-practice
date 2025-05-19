@@ -3,10 +3,11 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { LoggerService } from './services/logger.service'
+import { FormsModule } from '@angular/forms'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, HelloWorldComponent, UserCardComponent],
+  imports: [RouterOutlet, RouterLink, HelloWorldComponent, UserCardComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -22,5 +23,9 @@ export class AppComponent {
   message = "";
   onUserSelected(eventData: string) {
     this.message = eventData;
+  }
+  name = '';
+  onSubmit() {
+    console.log('Submitted name:', this.name);
   }
 }
