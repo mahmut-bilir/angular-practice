@@ -13,7 +13,7 @@ export class HelloWorldComponent {
   imageUrl = "https://example.com/image.jpg";
   sayHi() {
     alert("Hello!");
-  };
+  }
   isLoggedIn = false;
   users = ['Mahmut', 'Ali', 'Murat'];
 }
